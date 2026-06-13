@@ -1,0 +1,27 @@
+{
+  "birthdays": [
+    {"username": "@abdu_kharimov_22", "display_name": "Abdu Kharimov", "day": 22, "month": 1},
+    {"username": "@Jam_Dj_1904", "display_name": "Jam DJ", "day": 19, "month": 4},
+    {"username": null, "display_name": "𝘄", "day": 6, "month": 5},
+    {"username": "@TetovM", "display_name": "TetovM", "day": 7, "month": 5},
+    {"username": "@CaS1E", "display_name": "CaS1E", "day": 4, "month": 6},
+    {"username": null, "display_name": "Radiant", "day": 13, "month": 6},
+    {"username": "@txriy", "display_name": "txriy", "day": 25, "month": 6},
+    {"username": "@murodjonuz", "display_name": "Murodjon Uz", "day": 2, "month": 7},
+    {"username": null, "display_name": "╬ Bradores ╬", "day": 18, "month": 7},
+    {"username": "@Mzirich", "display_name": "Mzirich", "day": 29, "month": 7},
+    {"username": "@tyrsos", "display_name": "Tyrsos", "day": 20, "month": 8},
+    {"username": "@PAS_Top4ik", "display_name": "PAS Top4ik", "day": 23, "month": 8},
+    {"username": "@ace_702", "display_name": "Ace 702", "day": 7, "month": 9},
+    {"username": "@Abduaxat01", "display_name": "Abduaxat", "day": 19, "month": 9},
+    {"username": "@dydshol987bs", "display_name": "Dydshol", "day": 11, "month": 10},
+    {"username": "@libertyndestiny", "display_name": "Liberty N Destiny", "day": 17, "month": 11},
+    {"username": "@Arteabuxgaltea", "display_name": "Arteabuxgaltea", "day": 19, "month": 11},
+    {"username": "@AbbosM_tg", "display_name": "Abbos M", "day": 19, "month": 11},
+    {"username": "@Shadow_King16", "display_name": "Shadow King", "day": 20, "month": 11},
+    {"username": "@Lukito_11", "display_name": "Lukito", "day": 28, "month": 11},
+    {"username": "@mirhojio7", "display_name": "Mirhojio", "day": 6, "month": 12},
+    {"username": "@pug357", "display_name": "Pug", "day": 10, "month": 12},
+    {"username": "@Halameet", "display_name": "Halameet", "day": 22, "month": 12}
+  ]
+}
