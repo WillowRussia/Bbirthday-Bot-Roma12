@@ -2,7 +2,7 @@ name: Birthday Bot
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # Каждый день в 6:00 UTC (9:00 по Москве)
+    - cron: '0 19 * * *'  # Каждый день в 6:00 UTC (9:00 по Москве)
   workflow_dispatch:
 
 jobs:
@@ -26,6 +26,6 @@ jobs:
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
-          # Если нужен прокси, раскомментируй:
+          TZ: Asia/Tashkent
           PROXY_URL: ${{ secrets.PROXY_URL }}
         run: python birthday_bot.py
