@@ -2,12 +2,15 @@ name: Birthday Bot
 
 on:
   schedule:
-    - cron: '0 19 * * *'  # Каждый день в 6:00 UTC (9:00 по Москве)
+    - cron: '0 19 * * *'   # 00:00 Ташкент
+    - cron: '30 18 * * *'  # 23:30 Ташкент (Страховка)
   workflow_dispatch:
 
 jobs:
   check-birthdays:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
       - name: Checkout code
@@ -19,13 +22,19 @@ jobs:
           python-version: '3.10'
       
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
+        run: pip install -r requirements.txt
       
       - name: Check birthdays and send messages
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT_ID: ${{ secrets.CHAT_ID }}
           TZ: Asia/Tashkent
-          PROXY_URL: ${{ secrets.PROXY_URL }}
         run: python birthday_bot.py
+
+      - name: Commit status file if changed
+        run: |
+          git config --global user.name "Birthday Bot"
+          git config --global user.email "bot@example.com"
+          git add sent_today.flag || true
+          git diff --staged --quiet || git commit -m "chore: update birthday bot status [skip ci]"
+          git push || echo "Nothing to push or push failed"
